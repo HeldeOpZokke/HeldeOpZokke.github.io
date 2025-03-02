@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.v Helde op Zökke</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>[x-cloak] { display: none !important; }</style>
+</head>
+<body class="bg-base-200 text-base-content min-h-[100vh]">
+
+<div class="container mx-auto p-6">
+    <div class="card card-side bg-base-100 shadow-sm">
+        <figure>
+            <img    class="w-[25vw]"
+                    src="logo.jpg"
+                    alt="Movie" />
+        </figure>
+        <div class="card-body" x-data="{spotify: false}">
+            <h2 class="card-title">Welkom bij Helde op Zökke! 🎭</h2>
+            <p>Leuk dat je onze website bezoekt! Wij zijn c.v. Helde op Zökke, een carnavalsvereniging met een passie voor gezelligheid, <br>traditie en natuurlijk een geweldige optocht.
+                Elk jaar zetten we samen met onze leden en vrienden alles op alles<br> om carnaval onvergetelijk te maken.<br><b><b>Alaaf en tot ziens bij Helde op Zökke! 🎉</b></b></p>
+            <button class="btn btn-circle btn-primary text-white shadow-lg hover:shadow-xl transition"
+                    @click="spotify = !spotify">
+                <i class="fa-brands fa-spotify text-xl"></i>
+            </button>
+            <iframe style="border-radius:12px"
+                    x-show="spotify" x-cloak x-transition
+                    src="https://open.spotify.com/embed/playlist/2sUVpDsG6FpdVD4tqRr5KV?utm_source=generator"
+                    width="50%" height="300"
+                    frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Sponsor Grid -->
+<div class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold text-center mb-6">Club van 20 "Vrienden van Helde op Zökke"</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Sponsor: Jolanda en Ron Lurken -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Jolanda en Ron Lurken" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Jolanda en Ron Lurken</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Ger en Ellen Hinzen -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Ger en Ellen Hinzen" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Ger en Ellen Hinzen</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Ralf Sevenich - Behang en Schilderwerken -->
+        <a href="https://www.facebook.com/profile.php/?id=100049384556052" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/149818599_3597668970355303_6175821181874112933_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Dy28B9zjYo0Q7kNvgH1bj3B&_nc_oc=AdiOapwvLhZp5jNTzsEN9kEzZTmVnh5qRlpLwI7UksKtX4YnZWAsasOSIHMyDnolYxM&_nc_zt=23&_nc_ht=scontent-ams4-1.xx&_nc_gid=AfFbNZkA27vmAStT16ik3D6&oh=00_AYC_XMujjZhz2BB9UgodbVk_ZW5XlQbgGaLvoT7ptyOkLQ&oe=67EBB9CC" alt="Ralf Sevenich - Behang en Schilderwerken" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Ralf Sevenich - Behang en Schilderwerken</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Jimmy Klein - JK Cleaning -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Jimmy Klein - JK Cleaning" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Jimmy Klein - JK Cleaning</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Marja Spork -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Marja Spork" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Marja Spork</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Riekie Hinzen -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Riekie Hinzen" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Riekie Hinzen</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Jo Hinzen -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Jo Hinzen" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Jo Hinzen</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Jef en Anita Heckman -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Jef en Anita Heckman" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Jef en Anita Heckman</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: 100,- op naam van Sammie ❤️ -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Sammie ❤️" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Sammie ❤️</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Loreen Heckman -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Loreen Heckman" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Loreen Heckman</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Kelly Heckman -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Kelly Heckman" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Kelly Heckman</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Kevin en Juliette Plum -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Kevin en Juliette Plum" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Kevin en Juliette Plum</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Monica en Loekie Hinzen -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Monica en Loekie Hinzen" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Monica en Loekie Hinzen</h3>
+            </div>
+        </a>
+
+        <!-- Sponsor: Huub Boumans -->
+        <a href="" target="_blank" class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition">
+            <figure class="p-4 w-24 h-24 flex-shrink-0">
+                <img src="alt.png" alt="Huub Boumans" class="w-full h-auto object-contain">
+            </figure>
+            <div class="card-body text-center">
+                <h3 class="text-lg font-bold">Huub Boumans</h3>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
